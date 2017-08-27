@@ -1,0 +1,56 @@
+{
+    "title": "Edit Subtype",
+    "name": "Subtype",
+    "jsonPage": "viewSubtype",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields": [{ 
+        "name": "Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    },{
+        "name": "Subtype",
+        "type": "tags",
+        "tableRef": "Subtype",
+        "dropDownType": "single",
+        "dropDownField": "name",
+        "searchApi": "searchCall",
+        "placeholder": "Enter Subtype",
+        "id": "input1",
+        "validation": ["", "trim", ""],
+        "url": "Subtype/search"
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitSubtype",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewSubtype"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewSubtype"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Subtype/save",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "Subtype/getOne",
+        "params": "_id"
+    }
+
+}

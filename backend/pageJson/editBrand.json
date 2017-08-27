@@ -1,0 +1,56 @@
+{
+    "title": "Edit Brand",
+    "name": "brand",
+    "jsonPage": "viewBrand",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields": [{ 
+        "name": "Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    },{
+        "name": "logo",
+        "type": "image",
+        "tableRef": "logo",
+        "size": "250 x 250",
+        "placeholder": "Upload photo",
+        "id": "logo",
+        "view": true,
+        "disabled": true,
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitBrand",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewBrand"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewBrand"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Brand/save",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "Brand/getOne",
+        "params": "_id"
+    }
+
+}

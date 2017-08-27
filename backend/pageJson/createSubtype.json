@@ -1,0 +1,50 @@
+{
+    "title": "Create Subtype",
+    "name": "Subtype",
+    "jsonPage": "viewSubtype",
+    "desciption": "",
+    "pageType": "create",
+    "urlFields": ["Subtype"],
+    "fields": [{ 
+        "name": "Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    },{
+        "name": "Brand",
+        "type": "tags",
+        "tableRef": "brand",
+        "dropDownType": "single",
+        "dropDownField": "name",
+        "searchApi": "searchCall",
+        "placeholder": "Enter Brand",
+        "id": "input1",
+        "validation": ["", "trim", ""],
+        "url": "Brand/search"
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitSubtype",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewSubtype"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewSubtype"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Subtype/save"
+    }
+}

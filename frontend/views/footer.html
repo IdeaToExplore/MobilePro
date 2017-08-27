@@ -1,0 +1,88 @@
+<footer>
+    <div class="footer_bgup" ng-controller="HomeCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="footer_padd">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="about-clickm">
+                            <h3>About Clickmania</h3>
+                            <p>
+                                Clickmania is an exclusive site for photographers, wherein we believe that photographers are not merely service providers
+                                but artists in the first place. Our mission is to create a universal platform for beginners,
+                                semi-professional & professional photographers, where they showcase their art & find potential
+                                absorbers of their work.
+                            </p>
+                            <p><a href="#" class="blank" ui-sref="aboutus" style="text-decoration: underline;">Know more</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <form name="loginForm">
+                            <h3>Subscribe Newsletter</h3>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address" ng-model="formData.email" required>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                 <span ng-click="subscribe(formData)">Subscribe</span>
+                        </button>
+                                </div>
+                            </div>
+                            <div class="soc_icns">
+                                <p>Follow us on </p>
+                                <ul class="list-unstyled list-inline">
+                                    <li>
+                                        <a href="#" target="_blank"><img src="frontend/img/soc1.png" class="img-responsive" title="Twitter" alt="twitter-link"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/ClickMania-Photography-portal-237141696771475/" target="_blank"><img src="frontend/img/soc2.png" class="img-responsive" title="Facebook" alt="facebook-link"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="frontend/img/soc3.png" class="img-responsive" alt="instagram-link" title="Instagram"></a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-md-2 col-sm-6 col-xs-6">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a ui-sref="home" class="blank">Home</a></li>
+                            <li class="list-group-item"><a href="#" class="blank" ui-sref="aboutus">About Us</a></li>
+                            <li class="list-group-item"><a ui-sref="categories" class="blank">Categories</a></li>
+                            <li class="list-group-item"><a ui-sref="users" class="blank">Featured Photographers</a></li>
+                            <!--<li class="list-group-item"><a href="#" class="blank">Artist of the month</a></li>-->
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-6">
+                        <ul class="list-group">
+                            <!--<li class="list-group-item"><a href="#" class="blank">Careers</a></li>-->
+                            <li class="list-group-item" style="color: gray">Media</li>
+                            <li class="list-group-item"><a ui-sref="contact-us" class="blank">Contact us</a></li>
+                            <li class="list-group-item"><a ui-sref="privacy-policy" class="blank">Privacy Policy</a></li>
+                            <li class="list-group-item"><a ui-sref="terms" class="blank">Terms & conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_bgdw">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <!--<p>Copyright &copy; {{template.year}}. All Right Resvered.</p>-->
+                    <p>Copyright &copy; Clickmania (OPC) Pvt.Ltd</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-right">
+                        <p>Designed by <a href="http://ting.in/" target="_blank">TING</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

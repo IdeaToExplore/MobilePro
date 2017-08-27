@@ -1,0 +1,1518 @@
+    @media (max-width: $screen-xs-max) {
+        //Global classes
+        .mg_t75 {
+            margin-top: 55px;
+        }
+        .text-hide {
+            display: none;
+        }
+        .head-f {
+            font-size: 30px!important;
+            line-height: 1!important;
+        }
+        .ft100 {
+            //font-size: 50px!important;
+            font-size: 42px!important;
+        }
+        .font70 {
+            font-size: 25px!important;
+        }
+        .big-font {
+            font-size: 55px!important;
+        }
+        .pad60 {
+            padding: 30px 0;
+        } //End of global classes
+        //Start of header.html
+        .brand-logo {
+            width: 90px!important;
+        }
+        .website-brand {
+            padding: 15px 0;
+        }
+        #nav-icon span {
+            height: 2px;
+        }
+        #nav-icon span:nth-child(1) {
+            top: 0;
+            width: 50%;
+            margin-left: 16px;
+        }
+        #nav-icon span:nth-child(2),
+        #nav-icon span:nth-child(3) {
+            top: 5px;
+            width: 38%;
+            margin-left: 20px
+        }
+        #nav-icon span:nth-child(4) {
+            top: 10px;
+            width: 34%;
+            margin-left: 23px;
+        }
+        #nav-icon.open span:nth-child(1) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+        #nav-icon.open span:nth-child(2) {
+            @include transform(rotate(45deg));
+            width: 60%!important;
+            margin-left: 0; //    width: 50%;
+            margin-left: 10px;
+        }
+        #nav-icon.open span:nth-child(3) {
+            @include transform(rotate(-45deg));
+            width: 60%!important;
+            margin-left: 10px; // width: 50%;
+        }
+        #nav-icon.open span:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        } // header>nav div.navbar-toggle>div.icon_float>span.icon_bar0,
+        // header>nav div.navbar-toggle>div.icon_float>span.icon_bar1,
+        // header>nav div.navbar-toggle>div.icon_float>span.icon_bar2,
+        // {
+        //     height: 2px!important;
+        // }
+        header>nav div.navbar-toggle {
+            margin-right: 3px;
+        }
+        .search-directive {
+            display: none;
+        }
+        .photographer {
+            //  text-align: left;
+            span {
+                font-size: 11.25px!important;
+            }
+            button {
+                font-size: 9px!important;
+                width: 52px!important;
+                padding: 5px 8px;
+            }
+        }
+        .side-menu {
+            width: 65%;
+            top: 54px!important;
+            .list-group-item {
+                font-size: 16px;
+            }
+        } //End of header.html
+        //Footer.html
+        footer {
+            .footer_bgdw {
+                display: block;
+                p {
+                    font-size: 12px;
+                    margin: 15px 0 0;
+                }
+            }
+        } //End of Footer.html
+        //Start of home.html
+        .sliding_bg {
+            margin-top: 55px;
+            .swiper-container {
+                height: auto;
+            }
+            .scroll_down {
+                display: none;
+            }
+            .swiper-container .swiper-slide img.swiperbg {
+                margin-top: 0;
+            }
+        }
+        .featu_photo_caraso {
+            .fp_padd_rl {
+                .fp_width {
+                    .fp_innerPadd {
+                        .fp_user_icn {
+                            top: 12%;
+                            .border-half {
+                                @include size(100px, 100px);
+                                margin-top: -8px;
+                            }
+                            h3 {
+                                font-size: 21.34px!important;
+                            }
+                            p {
+                                font-size: 18.08px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pht_contest {
+            height: 280px!important;
+            .jumbotron {
+                padding: 0!important;
+                text-align: center;
+                .ht100 {
+                    height: auto!important;
+                    h2 {
+                        font-size: 30px!important;
+                        span:first-child {
+                            margin-left: -35px;
+                        }
+                        span:last-child {
+                            margin-left: 0!important;
+                        }
+                    }
+                }
+            }
+        }
+        .categories {
+            .ht30 {
+                .imgwt {
+                    width: 80px!important;
+                    left: -37px!important;
+                }
+                h2 {
+                    font-size: 30px!important;
+                    margin-top: 10px;
+                }
+            }
+            button {
+                width: 115px!important;
+                height: 35px!important;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+        .signup {
+            .img_relative {
+                display: none;
+            }
+            .cam_heading {
+                height: 50px!important;
+                h2 {
+                    font-size: 30px!important;
+                }
+                h2:nth-child(even):after {
+                    top: -40px!important;
+                    font-size: 80px!important;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .atm {
+            .head-f {
+                position: relative;
+                top: 0!important;
+                br {
+                    display: none;
+                }
+                text-align: center;
+                margin-top: 10px;
+                span {
+                    margin-left: 5px;
+                }
+            }
+            min-height: 320px!important;
+            .bg_img {
+                .abslt {
+                    // used to adjust the logo
+                    width: 29px!important;
+                    bottom: -15px!important;
+                    @include transform(rotate(3deg));
+                    left: -11px!important;
+                }
+            }
+            .user_info {
+                h2 {
+                    font-size: 22px!important;
+                }
+            }
+        }
+        .testimonial {
+            h2 {
+                font-size: 30px!important;
+            }
+            .padd63 {
+                padding: 15px 15px;
+                text-align: initial;
+            }
+            .abslt_lt {
+                display: none;
+            }
+            .abslt_rt {
+                right: 1px!important;
+                width: 29px!important;
+            }
+        } //End of home.html
+        //Start of users.html
+        .head-name {
+            padding: 30px 0!important;
+            .ht30 {
+                height: 70px!important;
+                .imgwt {
+                    width: 110px;
+                    margin-top: 15px!important;
+                }
+            }
+            .sech {
+                line-height: 0.8;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .sub-main {
+            .sub-title {
+                .fith {
+                    padding-right: 80px;
+                }
+            }
+            .upgrd-gold {
+                .gold-mgtop {
+                    margin-top: 0;
+                }
+            }
+            .img-min-h {
+                min-height: 130px;
+            }
+        }
+        .users {
+            padding: 0 35px;
+        } //End of users.html
+        //Start of user-profile
+        .userprof-bg {
+            margin-top: 55px;
+            .userbg-img {
+                min-height: 135px;
+            }
+        }
+        .ab {
+            position: absolute;
+            bottom: 0!important;
+            margin: auto 0;
+            right: 0 !important;
+            width: 100% !important;
+            .border-profile {
+                width: 150px!important;
+                height: 150px!important;
+                margin-bottom: 25px;
+                margin-left: 0;
+                border: none;
+                float: none;
+                vertical-align: middle;
+                .profile-user {
+                    width: 35px;
+                }
+            }
+        }
+        .user-name {
+            bottom: auto!important;
+            h1 {
+                font-size: 25px!important;
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 17px!important;
+                max-height: 70px;
+                line-height: 1;
+                -webkit-line-clamp: 4;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .full-tabs2 {
+            li {
+                font-size: 20px!important;
+                padding: 0 25px;
+            }
+            img {
+                @include size(20px, 20px);
+            }
+            .border-line {
+                padding: 5px 0px 3px!important;
+            }
+        }
+        .main-cont {
+            margin: 60px 0px!important;
+        }
+        .so-nam {
+            font-size: 19px!important;
+            img {
+                width: 25px!important;
+                margin: 0 3px!important;
+            }
+        }
+        .send_enquirySlidebar {
+            right: -68%;
+            width: 69%;
+            .padd35 {
+                padding: 0 25px;
+            }
+            .enquiry {
+                height: 315px;
+                padding-right: 16px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            .cntry-code {
+                width: 64px;
+            }
+            .mobNo {
+                width: calc(100% - 64px);
+                height: auto;
+                margin-left: 64px;
+            }
+        }
+        .showEnquery {
+            right: 0!important;
+        }
+        .sec-tab p {
+            font-size: 40px;
+            line-height: 30px;
+        }
+        .black-custom-slider {
+            overflow-x: hidden; //  padding: 0 60px;
+        }
+        .radioBtn_cat {
+            .inline-block {
+                width: 100%;
+                padding: 10px;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+            .radioBtn_wdt {
+                width: 100%;
+                padding: 5px;
+                .radio-inline {
+                    font-size: 20px;
+                }
+            }
+            .collapse {
+                min-height: 30px !important;
+            }
+        } //End of user-profile
+        //Start of future-photographer.html
+        .btn-social {
+            width: 180px;
+            margin: 3px 2px!important;
+        }
+        .feature-photo {
+            .head-name {
+                p {
+                    padding: 35px 15px 0;
+                }
+            }
+            .ht30 {
+                position: relative;
+            }
+            .full-tabs {
+                li {
+                    font-size: 18px!important;
+                    padding: 2px 35px;
+                }
+            }
+            .signup-form {
+                margin-bottom: 10px;
+            }
+            .intro {
+                margin-top: 0;
+            }
+            .list {
+                background-image: none;
+            }
+        } //End of future-photographer.html
+        //Start of photographer.html
+        .change-cover {
+            display: none;
+        }
+        .border-divider {
+            border: 0 solid transparent;
+        }
+        .profile-banner .profile-banner__bg {
+            img {
+                width: 100%;
+                height: 156px;
+            }
+        }
+        .profile-block {
+            bottom: 33px;
+            width: 100%;
+            left: 1%;
+            .profile-holder {
+                width: 100px!important;
+                height: 100px!important;
+                vertical-align: middle;
+            }
+            .name-sec {
+                width: 65%!important;
+                padding: 0 12px;
+                margin-bottom: 25px!important;
+                .name-part {
+                    font-size: 20px;
+                }
+                .loc-span {
+                    font-size: 16px;
+                    display: -webkit-box;
+                    max-height: 48px;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .added-city {
+                    width: 100% !important;
+                }
+            }
+            .holder1 {
+                vertical-align: bottom;
+            }
+        }
+        .sm-logo {
+            width: 30px;
+        }
+        .btn-1 img {
+            @include size(20px, 20px);
+            bottom: -8px;
+        }
+        .profile-holder {
+            &:hover {
+                .upload-trans {
+                    padding: 6px 0px 20px!important;
+                    span {
+                        display: block;
+                        text-align: center;
+                        font-size: 13px;
+                        img {
+                            display: none;
+                        }
+                    }
+                    .directive-opacity {
+                        top: -3px;
+                    }
+                }
+            }
+        }
+        .btn-1 {
+            padding: 0;
+            .btn-select {
+                font-size: 13px!important;
+            }
+        }
+        .border-line {
+            padding: 0;
+        }
+        .circular-checkbox {
+            p {
+                font-size: 18px;
+            }
+            .absolute-plus {
+                width: 16px;
+                height: 16px
+            }
+        }
+        .quarter-circle {
+            display: none;
+        }
+        .about-desc {
+            margin: 35px 15px;
+        }
+        .abt-form {
+            padding: 10px 20px 1px;
+        }
+        .city {
+            .city__name {
+                width: 50%!important;
+            }
+            .city__add-icon {
+                vertical-align: super;
+            }
+        }
+        .form-horizontal {
+            .selected-data {
+                width: 100%!important;
+            }
+        }
+        .terms {
+            width: 90%;
+        }
+        .package-card {
+            img {
+                display: block;
+                margin: 0 auto 5px;
+            }
+        }
+        .pkg-info {
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+        .border-divider {
+            ul>li {
+                font-size: 15px;
+            }
+        }
+        .historypackage-card1,
+        .historypackage-card2 {
+            padding: 25px 20px;
+            .pkg-info {
+                .upload-pic {
+                    vertical-align: top;
+                    float: none;
+                }
+                .upload-pic {
+                    display: block;
+                }
+                button {
+                    width: auto;
+                    margin: 15px auto;
+                }
+            }
+            img {
+                width: 55px;
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+        .sub-main {
+            .sub-title {
+                height: 0;
+            }
+            .upgrade-inner {
+                padding-top: 20px;
+                position: relative;
+                width: 100%;
+                margin-left: 6px;
+                border-radius: 10px;
+                background: linear-gradient(to right, #adadad, #e4e4e4);
+                color: #333;
+            }
+        }
+        .uploaded-images {
+            padding: 20px 0px 0;
+            .package-head {
+                width: 100%!important;
+            }
+            .circular-checkbox {
+                width: 100%;
+            }
+            .upload-pic {
+                width: 100%;
+                margin: 15px 0;
+            }
+            .checkbox-form button {
+                width: 100%;
+            }
+        }
+        .circular-checkbox .radio-cat {
+            width: 100%;
+            margin-left: -2px;
+        }
+        .edit-uploaded button {
+            font-size: 13px;
+        }
+        .upgrd-gold h2 {
+            margin-top: 1px;
+        }
+        .compete {
+            margin: 35px 0;
+            .contest-heading {
+                font-size: 15px;
+            }
+            .pls-mns-sign {
+                width: 16px;
+                height: 16px;
+                margin: 0;
+            }
+            .upload-photobox {
+                min-height: 160px;
+            }
+            .photobox-txt {
+                padding: 40px 25px;
+                img {
+                    height: 30px;
+                }
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        } //End of photographer.html
+        //Start of wildlife-photographer.html
+        // .black-custom-slider {
+        //     .border-half {
+        //         img {}
+        //     }
+        // }
+        .back-back-desk {
+            display: none;
+        }
+        .black-back-mob {
+            display: block;
+        }
+        .black-btn {
+            font-size: 13px;
+            width: 71px;
+        }
+        .tans-btn {
+            padding: 6px 16px;
+        }
+        .btn-marg {
+            margin: 15px 18px 5px;
+            text-align: center;
+            float: none!important;
+        }
+        .border-up {
+            margin-top: 10px;
+        }
+        .nopht-title {
+            margin: 50px 0;
+            .ht30 {
+                margin-bottom: 25px!important;
+            }
+        }
+        .marg-rel {
+            margin: 10px 26px 0;
+        } //End of wildlife-photographer.html
+        //Start of become fp photographer
+        .becomefp {
+            margin-top: 57px!important;
+            .becomefp-title {
+                .ht30 {
+                    margin-left: 0!important;
+                }
+                .imgwt {
+                    width: 80px!important;
+                }
+                h1 {
+                    margin-top: 41px!important;
+                    font-size: 35px !important;
+                    text-indent: 55px;
+                }
+            }
+            .cam-img {
+                padding: 25px 60px!important;
+            }
+            button {
+                font-size: 11px;
+            }
+        } //End of becomefp photographer
+        //Start of photo-contest
+        .compet__title,
+        .contest__title {}
+        .contest {
+            .contest__stp-btn {
+                li {
+                    font-size: 25px;
+                }
+            }
+            .contest__stp3,
+            .contest__stp2 {
+                @include margin(0 35px);
+                button {
+                    font-size: 15px;
+                }
+            }
+            .contest__stp3__txt {
+                @include padding(60px 25px);
+                img {
+                    height: 40px;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                h4 {
+                    font-size: 27px;
+                }
+            }
+            .contest__stp2__terms {
+                padding-top: 30px;
+                padding-bottom: 40px;
+            }
+        } //End of photo-contest
+        //Start of thank, error, thanks-gold, thanks-silver,becomefp .html
+        .thanks-title {
+            text-align: center;
+        }
+        .free-member {
+            width: 100%!important;
+            padding: 65px 10px 65px;
+            line-height: 1.2;
+            .small-font {
+                font-size: 25px!important;
+                line-height: 0;
+            }
+            .big-font {
+                font-size: 40px!important;
+            }
+            .left-font {
+                text-align: inherit;
+                margin-left: -19%!important;
+                margin-bottom: 6px;
+            }
+            .deny-msg {
+                display: inline;
+            }
+        }
+        .silver-pack {
+            padding: 0;
+            .pkg-info {
+                width: 31%!important;
+            }
+        }
+        .circular-checkbox {
+            width: 100%;
+            .radio-cat {
+                width: 100%!important;
+            }
+            .upload-pic {
+                margin: 15px 0;
+                width: 100%;
+            }
+            button {
+                width: 100%;
+            }
+        }
+        .text-set {
+            max-width: 100%;
+        } // .abt-form select {
+        //     width: 100%;
+        // }
+        .abt-form {
+            .dropdown {
+                .dropdown-menu {
+                    left: 0;
+                }
+                button {
+                    font-size: 13px;
+                    .caret {
+                        border-top: 6px dashed;
+                        border-right: 6px solid transparent;
+                        border-left: 6px solid transparent;
+                    }
+                }
+            }
+        }
+        .upgrade-gd {
+            .free-member {
+                padding: 9px 10px 35px!important;
+                .small-font {
+                    line-height: 1!important;
+                }
+            }
+        }
+        .upgrade-pkg,
+        .upgrade-pkg2 {
+            margin: 0 14px;
+        } //End of thank, error, thanks-gold, thanks-silver,becomefp .html
+        // Start of about us page, privacy-policy, terms-condition page
+        .aboutus,
+        .privacy-policy,
+        .terms-condition,
+        .contactus {
+            @include margin(55px null null null);
+        }
+        .aboutus__desc,
+        .privacy-policy__desc,
+        .terms-condition__desc {
+            @include padding(45px 15px 60px);
+        }
+        .contactus {
+            .contactus__address {
+                position: relative!important;
+                width: 100%!important; //   padding: 15px 45px;
+                li {
+                    font-size: 13px;
+                }
+            }
+        } //End of about us page, privacy-policy, terms-condition page
+        //All modals html
+        //Statrt of signup.html
+        .upload-imageblock {
+            padding: 15px;
+            .img-holder {
+                background-color: rgba(204, 204, 204, 0.45);
+                height: 185px;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            .upl-sec {
+                text-align: center;
+                .ui-select-container {
+                    width: 100%!important;
+                }
+                .ui-select-search {
+                    width: 100%!important;
+                }
+                .upload-dire {
+                    width: 22%;
+                    margin-left: 5px;
+                }
+            }
+            .mob-ht {
+                min-height: 125px;
+            }
+        }
+        .sign-up {
+            .sign-btn {
+                font-size: 13px;
+                padding: 4px 15px 7px;
+            }
+            .soc-btn {
+                margin: 0 5px 5px;
+                font-size: 13px;
+                width: 165px;
+            }
+            .soc-btn i {
+                width: 25%;
+            }
+            .alert-text {
+                text-indent: 0!important;
+                text-align: center;
+            }
+        } //End of signup.html
+        .modal-dialog .modal-demo .modal-body {
+            .absolute-cross {
+                @include position(absolute, -10px -11px null null);
+                display: inline-block;
+                @include size(25px, 25px);
+                cursor: pointer;
+            }
+            .delete-pht {
+                @include padding(5px 0);
+                h4 {
+                    font-size: 14px;
+                }
+                button {
+                    width: 75px;
+                    font-size: 12px;
+                }
+            }
+            .pass-contet,
+            .signupOTP-contet {
+                @include padding(0);
+                h2 {
+                    font-size: 25px;
+                }
+                h4 {
+                    font-size: 14px;
+                }
+                button.go-btn,
+                .ok-btn {
+                    font-size: 12px;
+                }
+            }
+        } //End of all modals html
+    } // End of @media
+    @media (max-width: 1024px) {
+        // Start of  home page
+        //CSS global classes
+        .font50 {
+            font-size: 50px;
+        }
+        .head-f {
+            @extend .font50;
+        }
+        .profile-holder {
+            @include size(195px, 195px);
+        }
+        .package-name {
+            font-size: 20px;
+        }
+        .set-1 {
+            font-size: 16px;
+        }
+        .full-hight {
+            height: 100%;
+        }
+        .package-price {
+            font-size: 20px;
+        }
+        .big-font {
+            font-size: 70px!important;
+        }
+        .font70 {
+            font-size: 40px;
+        }
+        .ft100 {
+            font-size: 70px;
+        } //End of CSS global classes
+        //Start of header.html
+        header>nav div.navbar-toggle>div.icon_float>span.icon_bar0,
+        header>nav div.navbar-toggle>div.icon_float>span.icon_bar1,
+        header>nav div.navbar-toggle>div.icon_float>span.icon_bar2,
+        {
+            height: 3px;
+        }
+        .brand-logo {
+            width: 171px;
+        }
+        a.navbar-brand {
+            padding: 16px 15px 5px;
+        }
+        #nav-icon.open span:nth-child(2),
+        #nav-icon.open span:nth-child(3) {
+            width: 85%;
+        }
+        .search-directive {
+            .ui-select-placeholder {
+                font-size: 12px;
+            }
+            .select-arrow {
+                @include position(absolute, 12px null null 29%);
+                img {
+                    @include size(32px, 34px);
+                }
+            }
+            .go-btn {
+                font-size: 12px;
+                padding: 2.4% 2.3%;
+            }
+        }
+        .photographer {
+            .photographer_img {
+                @include size(25px, 19px);
+                img {
+                    height: auto;
+                }
+            }
+            span {
+                font-size: 12.25px;
+            }
+            button {
+                font-size: 12px;
+                @include size(70px, auto);
+            }
+        }
+        .side-menu {
+            width: 55%;
+            top: 58px;
+        } //End of header.html
+        //Start of future photo
+        .featu_photo_caraso {
+            .fp_padd_rl {
+                h2 {
+                    @extend .font50;
+                }
+            }
+        } //End of future photo
+        // start of photo contest section
+        .pht_contest {
+            height: 345px;
+            .jumbotron {
+                padding: 0;
+                .ht100 {
+                    height: 85px;
+                    h2 {
+                        @extend .font50;
+                    }
+                }
+            }
+        } //End of the photo contest section
+        //Start of section categorie
+        .categories {
+            .ht30 {
+                .imgwt {
+                    width: 110px;
+                    left: -55px;
+                }
+                h2 {
+                    @extend .font50;
+                }
+            }
+            button {
+                @include size(130px, 39px);
+                &:hover {
+                    color: white;
+                }
+            }
+        } //End of section categorie
+        //Start of signup section
+        .signup {
+            .mg {
+                @include margin(0 0);
+            }
+            .img_relative {
+                top: -60px;
+            }
+            .img_absolute {
+                display: none;
+            }
+            .cam_heading {
+                height: 85px;
+                h2 {
+                    @extend .font50;
+                }
+                h2:nth-child(even):after {
+                    top: -55px;
+                    font-size: 120px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        } //End of sign up section 
+        //Start of the artist of the month
+        .atm {
+            min-height: 360px;
+            .head-f {
+                top: 31px;
+                font-size: 34px;
+                line-height: 26px;
+            }
+            .bg_img {
+                .user-ab {
+                    .border-half {
+                        @include size(180px, 180px);
+                        .profile-f-img {
+                            width: 180px;
+                            height: 150px;
+                            transform: rotate(-44deg);
+                        }
+                        .user-img {
+                            background-size: cover!important;
+                            height: 100%;
+                            border-radius: 50%;
+                            transform: rotate(-44deg);
+                        }
+                    }
+                }
+                .abslt {
+                    // used to adjust the logo
+                    width: 40px;
+                    position: absolute;
+                    bottom: -21px;
+                    @include transform(rotate(3deg));
+                    left: -21px;
+                }
+            }
+            .user_info {
+                h2 {
+                    font-size: 24px;
+                }
+                h3 {
+                    font-size: 19px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        } //End of the artist of the month
+        // Start of Testimonials
+        .testimonial {
+            min-height: 345px!important;
+            h2 {
+                @extend .font50;
+            }
+            .abslt_lt {
+                width: 40px;
+            }
+            .abslt_rt {
+                // used for downside logo image
+                right: -5px;
+                width: 40px;
+                bottom: -14px;
+            }
+        } //End of Testimonials
+        // End of home page.html
+        // Start of photographer.html page
+        .profile-banner {
+            .profile-banner__bg {
+                height: auto;
+            }
+        }
+        .change-cover {
+            display: none;
+        }
+        .name-sec {
+            @include size(505px, auto);
+            margin-bottom: 30px;
+            .name-part {
+                font-size: 30px; // line-height: 1;
+                text-transform: capitalize;
+            }
+            .added-city {
+                vertical-align: top;
+                width: 75%;
+            }
+        }
+        .btn-1 {
+            .btn-select {
+                font-size: 20px;
+            }
+            .form-horizontal {
+                .selected-data {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 70%;
+                }
+            }
+        }
+        .city {
+            .city__name {
+                @include size(40%, auto);
+            }
+            .city__add-icon {
+                @include margin(null 0 null null);
+            }
+            .added-city {
+                width: 100%;
+            }
+        }
+        .abt-form {
+            .speciality-list {
+                @include size(100%, auto);
+            }
+            .check-box {
+                padding: 0 5px;
+            }
+        }
+        .form-horizontal .selected-data {
+            width: 70%;
+        }
+        .uploaded-images {
+            .package-head {
+                width: 35%;
+            }
+            .count-images {
+                font-size: 17px;
+            }
+        }
+        .package-specs li {
+            font-size: 18px;
+        }
+        .historypackage-card1,
+        .historypackage-card2 {
+            .package-name,
+            .package-price {
+                font-size: 20px;
+            }
+        }
+        .checkbox-form {
+            button {
+                font-size: 15px;
+                padding: 10px 30px;
+            }
+        }
+        .circular-checkbox {
+            .radio-cat {
+                width: 79%;
+            }
+        }
+        .edit-uploaded {
+            button {
+                padding: 5px 5px;
+            }
+        }
+        .profile-holder {
+            &:hover {
+                .upload-trans {
+                    padding: 6px 20px 28px;
+                }
+            }
+        }
+        .upl-sec {
+            // Used in userupload-photo.html modal
+            .upload-head {
+                font-size: 30px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .upload-pic {
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+        .sub-main {
+            .sub-title {
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    margin-top: 10px;
+                    .btn {
+                        font-size: 13px!important;
+                    }
+                }
+            }
+            .upgrade-inner {
+                font-size: 19px;
+                right: 6px;
+                bottom: 4%;
+            }
+        }
+        .upgrade-gd {
+            .upgrd-gold {
+                .big-font {
+                    font-size: 70px;
+                }
+            }
+        }
+        .package-card {
+            img {
+                width: 65px;
+            }
+        }
+        .silver-pack {
+            .pkg-info {
+                width: 21%;
+            }
+        }
+        .or-cont:before {
+            content: '';
+        }
+        .free-member {
+            width: 84%;
+            .left-font {
+                margin-left: 32%;
+            }
+        }
+        .head-name {
+            .ht30 {
+                .imgwt {
+                    width: 110px;
+                    margin-top: 47px;
+                }
+            }
+            .sech {
+                line-height: 0.8;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .sub-main {
+            .sub-title {
+                .fith {
+                    line-height: 0.8;
+                    margin-top: 30px;
+                }
+            }
+        } // End of photographer.html page
+        //Start of user.html page
+        .head-name {
+            .ht30 {
+                .imgwt {
+                    width: 110px;
+                    margin-top: 47px;
+                }
+            }
+            .sech {
+                line-height: 0.8;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .sub-main {
+            .sub-title {
+                .fith {
+                    line-height: 0.8;
+                    margin-top: 30px;
+                }
+            }
+        } //End of user.html page
+        //Start of user-profile.html
+        .main-cont {
+            margin: 60px 65px;
+        }
+        .so-nam {
+            font-size: 30px;
+            img {
+                width: 50px;
+                margin: 0 10px;
+            }
+        }
+        .ab {
+            @include position(absolute, null 66% 0 3%);
+            width: 0;
+            .border-profile {
+                @include size(250px, 250px);
+            }
+        }
+        .user-name {
+            bottom: 80px;
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 23px;
+            }
+        }
+        .full-tabs2 {
+            li {
+                font-size: 25px;
+            }
+            .border-line {
+                padding: 9px 0px 6px;
+            }
+        } //End of user-profile.html
+        //Start of feature-pht.html
+        .full-tabs {
+            li {
+                font-size: 25px;
+            }
+        }
+        .intro-con {
+            font-size: 18px;
+        }
+        .list {
+            min-height: 1px;
+            background-position: right center;
+            background-size: 28% 85%;
+        }
+        .min-h {
+            min-height: 565px;
+        }
+        .btn-social {
+            margin: 0 2px;
+            padding-left: 40px;
+            span {
+                width: 30px;
+                font-size: 1.2em;
+            }
+        } //End of feature-pht.html
+        //Start of Wild-photographer.html
+        .other-section .thumbnail .profile-f-img {
+            height: auto;
+        }
+        .black-custom-slider {
+            .border-half {
+                @include size(100px, 100px);
+            }
+            .profile-f-img {
+                height: auto;
+            }
+            .intro-profile .name-loc {
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        } //End of Wild-photographer.html
+        // Start of about us page, privacy-policy, terms-condition page
+        .contactus {
+            .contactus__address {
+                width: 50%;
+                li {
+                    font-size: 16px;
+                }
+            }
+        } //End of about us page, privacy-policy, terms-condition page
+        //Start of Thank You for gold, silver & sorry pages
+        .thanks-title {
+            .ht30 {
+                position: relative;
+                @include margin(null null 40px null);
+            }
+            .imgwt {
+                @include size(100px, auto);
+            }
+            h1 {
+                font-size: 70px;
+                line-height: 0.8;
+                @include margin(50px null null null);
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .thanks .cam-img,
+        .thanks-gold .cam-img,
+        .thanks-silver .cam-img,
+        .error .cam-img,
+        .becomefp .cam-img {
+            @include padding(35px);
+        }
+        .thanks,
+        .thanks-gold,
+        .thanks-silver,
+        .error,
+        .becomefp {
+            button {
+                font-size: 12px;
+                @include padding(10px 20px);
+                border-radius: 0px;
+            }
+        }
+        .becomefp {
+            .becomefp-title {
+                .ht30 {
+                    margin-left: 8.33333%;
+                }
+                p {
+                    @include margin(10px 5% null);
+                }
+            }
+            .cam-img {
+                @include padding(35px 150px);
+            }
+            button {
+                display: block;
+                margin: 0 auto;
+            }
+        } //End of Thank You for gold, silver & sorry pages
+        //Start of competation(Photo Contest UI)
+        .contest {
+            .contest__stp-btn {
+                li {
+                    font-size: 25px;
+                }
+            }
+            .contest__stp3,
+            .contest__stp2 {
+                @include margin(0 35px);
+                button {
+                    font-size: 15px;
+                }
+            }
+            .contest__stp3__txt {
+                @include padding(60px 25px);
+                img {
+                    height: 40px;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                h4 {
+                    font-size: 27px;
+                }
+            }
+            .contest__stp2__terms {
+                padding-top: 30px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    @media (max-width: $screen-md-max) {}
+
+    @media only screen and(orientation: landscape) {
+        .photographer {
+            .photographer_img {
+                @include size(35px, 28px);
+            }
+            span {
+                font-size: 17.25px;
+            }
+        }
+    }
+
+    @media (min-width: 320px)and(max-width: 375px) {
+        #nav-icon {
+            padding: 2px;
+        }
+        .brand-logo {
+            width: 82px!important;
+        }
+        .photographer {
+            span {
+                font-size: 10px !important;
+            }
+        }
+    }

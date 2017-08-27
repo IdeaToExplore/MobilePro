@@ -1,0 +1,69 @@
+{
+    "title": "Edit Question",
+    "name": "Question",
+    "jsonPage": "viewQuestion",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields": [{ 
+        "name": "Question",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    },{
+        "name": "Options",
+        "type": "box",
+        "tableRef": "option",
+        "validation": ["", "trim", ""],
+        "fields": [{
+                    "name": "Name",
+                    "type": "text",
+                    "tableRef": "name",
+                    "tableValue": "name",
+                    "placeholder": "Enter name",
+                    "id": "name",
+                    "onView": true,
+                    "validation": ["", "trim", ""]
+                }, {
+                    "name": "icon",
+                    "type": "image",
+                    "tableRef": "icon",
+                    "tableValue": "icon",
+                    "placeholder": "Enter icon",
+                    "id": "icon",
+                    "onView": true,
+                    "validation": ["", "trim", ""]
+                }]
+        }],
+    "action": [{
+        "name": "submit",
+        "action": "submitQuestion",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewQuestion"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewQuestion"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Question/save",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "Question/getOne",
+        "params": "_id"
+    }
+
+}

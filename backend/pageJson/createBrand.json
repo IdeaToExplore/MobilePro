@@ -1,0 +1,50 @@
+{
+    "title": "Create Brand",
+    "name": "brand",
+    "jsonPage": "viewBrand",
+    "desciption": "",
+    "pageType": "create",
+    "urlFields": ["brand"],
+    "fields": [{ 
+        "name": "Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    },{
+        "name": "logo",
+        "type": "image",
+        "tableRef": "logo",
+        "size": "250 x 250",
+        "placeholder": "Upload photo",
+        "id": "logo",
+        "option": "single",
+        "Onview": true,
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitBrand",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewBrand"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewBrand"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Brand/save"
+    }
+}
